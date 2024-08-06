@@ -4,6 +4,7 @@
   --branco-principal: #ffffff;
   --cinza-secundario: #c0c0c0;
   --botao-azul: #167BF7;
+  --botao-azul-hover: #0E5AAB;
   --cor-de-fundo: #00030C;
   --fonte-principal: 'Inter', sans-serif;
 }
@@ -49,9 +50,20 @@ body {
   margin-bottom: 1rem;
 }
 
+.container__botao:hover {
+  background-color: var(--botao-azul-hover);
+  transition: 0.3s ease;
+}
+
 .botao_secundario {
   background-color: transparent;
   border: 0.125rem solid var(--branco-principal);
+}
+
+.botao_secundario:hover {
+  background-color: var(--branco-principal);
+  color: var(--cor-de-fundo);
+  transition: 0.3s ease;
 }
 
 .container__aviso {
@@ -146,6 +158,15 @@ body {
   font-size: 1rem;
   text-decoration: none;
   color: var(--branco-principal);
+}
+
+.lista__link a:hover {
+  color: var(--botao-azul);
+  transition: 0.3s ease;
+}
+
+.lista__link a:active {
+  color: rgb(140, 0, 255)
 }
 
 .rodape__texto {
